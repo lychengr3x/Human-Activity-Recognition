@@ -25,7 +25,7 @@ class DataManager():
         Load dataset.
 
         Args:
-            ds (str): dataset accepts the name `train` or `test`.
+            ds (str): dataset accepts the name 'train' or 'test'.
 
         Returns:
             pd.Dataframe()
@@ -51,9 +51,6 @@ class DataManager():
     def get_train_and_valid(self):
         '''
         Split training data to training set and validation set.
-
-        Args:
-            validation_size (float): range from 0.0 to 1.0.
 
         Returns:
             xtrain (np.ndarray): training samples
@@ -90,7 +87,13 @@ class RandomForest():
 
     def train(self, predict=True):
         '''
-        Train on training set
+        Train on training set.
+
+        Args:
+            predict (bool): implement prediction or not.
+
+        Returns:
+            model
         '''
         assert(isinstance(predict, bool))
 
@@ -158,7 +161,13 @@ class SVM():
 
     def train(self, predict=True):
         '''
-        Train on training set
+        Train on training set.
+
+        Args:
+            predict (bool): implement prediction or not.
+
+        Returns:
+            model
         '''
         assert(isinstance(predict, bool))
 
@@ -231,7 +240,7 @@ def grid_search(x, y, model):
     elif model == 'svm':
         params = {'kernel': ('linear', 'rbf'), 'C': (1, 2, 5)}
         clf = SVC()
-        
+
     else:
         raise SyntaxError("Only 'svm' or 'randomforest' is accepted.")
 
