@@ -23,4 +23,4 @@ Here are functions that preprocess the dataset and implement classification.
 
 Details regarding how the functions work and show the performance of models as well.  
 
-PS: If github cannot load the jupyter file successfully, please copy the url of the file and then go to [https://nbviewer.jupyter.org/](https://nbviewer.jupyter.org/).
+**PS: If github cannot load the jupyter file successfully, please go to [here](https://nbviewer.jupyter.org/github/lychengr3x/Human-Activity-Recognition/blob/master/src/Human_Activity_Recognition.ipynb).**
