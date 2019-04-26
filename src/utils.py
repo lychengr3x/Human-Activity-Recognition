@@ -238,7 +238,7 @@ def grid_search(x, y, model):
         clf = RandomForestClassifier()
 
     elif model == 'svm':
-        params = {'kernel': ('linear', 'rbf'), 'C': (1, 2, 5)}
+        params = {'C': (1, 2, 5, 10), 'gamma':('scale', 'auto')}
         clf = SVC()
 
     else:
