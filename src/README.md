@@ -21,4 +21,6 @@ Here are functions that preprocess the dataset and implement classification.
 
 ## `Human_Activity_Recognition.ipynb`
 
-Details regarding how the functions work and show the performance of models as well.
+Details regarding how the functions work and show the performance of models as well.  
+
+PS: If github cannot load the jupyter file successfully, please copy the url of the file and then go to [https://nbviewer.jupyter.org/](https://nbviewer.jupyter.org/).

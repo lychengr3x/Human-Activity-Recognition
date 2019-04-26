@@ -16,7 +16,7 @@ I use `pandas` to deal with data in the `.csv` file. There are total 160 categor
 
 At first, I try to use the **SVM** model with RBF kernel but it does not work perfectly. Then, I turn to **Random Forest Classifier** and it has much better performance. As for the hyperparameters, I use grid search in order to achieve the best performance.
 
-* SVM model  
+* SVM    
     * `kernel`: RBF
     * `C`: 5
     * `gamma`: 'scale'
@@ -47,11 +47,11 @@ At first, I try to use the **SVM** model with RBF kernel but it does not work pe
 The following are the results of 2 models. Please read the jupyter notebook ([here](src/Human_Activity_Recognition.ipynb)) for more details.
 
 * SVM  
-  * accuracy: 90.34%  
+  * accuracy: **90.34%**  
   * prediction: ['B', 'A', 'B', 'A', 'A', 'E', 'D', 'B', 'A', 'A', 'B', 'C', 'B', 'A', 'E', 'E', 'A', 'B', 'B', 'B']
 
 * Random Forest Classifier  
-  * accuracy: 99.73%  
+  * accuracy: **99.73%**  
   * prediction: ['B', 'A', 'B', 'A', 'A', 'E', 'D', 'B', 'A', 'A', 'B', 'C', 'B', 'A', 'E', 'E', 'A', 'B', 'B', 'B']
 
 As we can see, the performance of **Random Forest Classifier** is better than **SVM** and it classifies almost correctly on the validation set. Despite this, they both predict the same result, and I believe both models are good for this problem.
